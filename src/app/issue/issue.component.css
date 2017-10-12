@@ -1,0 +1,11 @@
+#issueBanner {
+	background-color: navy;
+}
+
+.issueBody { 
+	text-align: left;
+}
+
+.issueHeader {
+	text-align: left;
+}

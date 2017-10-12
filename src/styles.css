@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+.jumbrotron {
+	background-image: url("/assets/images/IMG_3637.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-color: #000;
+}
+
+.form-horizonal .control-label { 
+	text-align: left;
+}
+
+/*app-root {
+  min-height: 100%;
+  width: 100%;
+  margin-bottom: -271px;
+  display: table;
+}
+
+menu-bar,
+router-outlet,
+app-footer{
+  display: table-row;
+  min-width: 100%;
+}
+
+menu-bar {
+	height: 60px;
+}
+
+router-outlet {
+  position: absolute;
+}
+
+app-footer {
+   height: 271px;
+}*/

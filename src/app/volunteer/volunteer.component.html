@@ -1,0 +1,120 @@
+<div class="container-fluid" style="margin-top: 50px">
+	<div class="row justify-content-center">
+		<div class="col-7 ">
+			<h1 style="text-align:left">Sign Up to Volunteer for our Campaign</h1>
+			<p  style="text-align:left">
+				This campaign isn't about one person, it is about a movement. We need your help to advocate for a city that values the input of its citizens, and whose compassion is measured through its actions. 
+			</p>
+			<p  style="text-align:left">
+				<b>
+					Sign up today and join the movement to create a Louisville for everyone.
+				</b>
+			</p>
+		</div>
+		<div class="col-3">
+			<h2 style="text-align: left">Volunteer for Ryan</h2>
+			<h3 style="text-align: left" [hidden]="!submitted">Thank you for your support!</h3>
+			<h3 style="text-align: left">Please fill out the following details:</h3>
+			<form class="form-horizonal" (ngSubmit)="onSubmit()" #volunteerForm="ngForm">
+				<div class="form-group">
+					<!-- <div class="row justify-content-start"> -->
+						<!-- <label  class="control-label" for="FirstName">First Name</label> -->
+						<input  type="text" 
+								class="form-control" 
+								placeholder="First Name" 
+								id="FirstName"
+								[(ngModel)]="model.firstName" name="firstName" 
+								#firstName="ngModel"
+								required>
+						<div [hidden]="firstName.valid || firstName.pristine"
+	     					 class="alert alert-danger">
+	     					 First name is required
+	     				</div>
+	     			<!-- </div> -->
+				</div>
+				<div class="form-group">
+					<!-- <label  for="LastName">Last Name</label> -->
+					<input  type="text" 
+							class="form-control" 
+							placeholder="Last Name" 
+							id="LastName"
+							[(ngModel)]="model.lastName"
+							name="lastName"
+							required>
+				</div>
+				<div class="form-group">
+					<!-- <label for="EmailAddress">Email Address</label> -->
+					<input  type="text" 
+							class="form-control" 
+							placeholder="Email Address" 
+							id="EmailAddress"
+							[(ngModel)]="model.emailAddress"
+							name="emailAddress"
+							required>	
+				</div>		
+				<div class="form-group">
+					<!-- <label for="PhoneNumber">Phone Number</label> -->
+					<input  type="text" 
+							class="form-control" 
+							placeholder="Phone Number" 
+							id="PhoneNumber"
+							[(ngModel)]="model.phoneNumber"
+							name="phoneNumber"
+							required>	
+				</div>
+				<div class="row" style="margin-left: 0px; margin-right: 0px">	
+					<h3>How would you like to volunteer?</h3>
+					<label>
+						<input  type="checkbox"
+								id="canvasCheck"
+								[(ngModel)]="model.willCanvas" name="canvasCheck">
+						Canvassing
+					</label>
+				</div>
+				<div class="row" style="margin-left: 0px; margin-right: 0px">
+					<label>
+						<input  type="checkbox"
+								id="callCheck"
+								[(ngModel)]="model.willCall" name="callCheck">
+						Phone Banking
+					</label>
+				</div>
+				<div class="row" style="margin-left: 0px; margin-right: 0px">
+					<label>
+						<input  type="checkbox"
+								id="hostCheck"
+								[(ngModel)]="model.willHost" name="hostCheck">
+						Hosting an Event
+					</label>
+				</div>
+				<!-- <div class="form-check">	
+					<label class="form-check-label">
+						<input  type="checkbox"
+								id="canvasCheck"
+								[(ngModel)]="model.willCanvas" name="canvasCheck">
+						Canvassing
+					</label>
+				</div>
+				<div class="form-check">	
+					<label class="form-check-label">
+						<input  type="checkbox"
+								id="callCheck"
+								[(ngModel)]="model.willCall" name="callCheck">
+						Phone Banking
+					</label>
+				</div>
+				<div class="form-check">	
+					<label class="form-check-label">
+						<input  type="checkbox"
+								id="hostCheck"
+								[(ngModel)]="model.willHost" name="hostCheck">
+						Hosting an Event
+					</label>
+				</div> -->
+				<div class="row" style="margin-top:10px; margin-left: 0px; margin-right: 0px">
+					<button type="submit" class="btn btn-success" (click)="volunteerForm.reset()">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

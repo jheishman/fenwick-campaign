@@ -1,0 +1,12 @@
+#aboutBanner {
+	background-color: navy;
+}
+
+#headshot {
+	background-color: navy;
+	height: 500px;
+}
+
+.aboutText {
+	text-align: left;
+}

@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-inverse bg-dark">
+	<a class="navbar-left" href="home">
+		<img src="./assets/images/campaign_logo.png"/>
+	</a>
+	<button class="navbar-toggler" 
+			type="button" 
+			data-toggle="collapse" 
+			data-target="#navbarSupportedContent" 
+			aria-controls="navbarSupportedContent" 
+			aria-expanded="false" 
+			aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+	
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav navbar-right">
+	    	<li class="nav-item">
+	    	 	<a class="nav-link" href="about">Meet Ryan</a>
+	    	</li>
+	    	<li class="nav-item dropdown">
+	    		<a  class="nav-link dropdown-toggle" 
+	    			id="navbarDropdownMenuLink" 
+	    			data-toggle="dropdown"
+	    			aria-haspopup="true" 
+	    			aria-expanded="false">
+          		Issues
+        		</a>
+        		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a 	class="dropdown-item" 
+		          		href="issue" 
+		          		[routerLink]="['/issue', 'criminaljustice']">
+		          	Criminal Justice Reform
+		          </a>
+		          <a 	class="dropdown-item" 
+		          		href="issue"
+		          		[routerLink]="['/issue', 'economicdevelopment']">
+		          	Equitable Economic Development
+		          </a>
+		          <a 	class="dropdown-item" 
+		          		href="issue"
+		          		[routerLink]="['/issue', 'landmanagement']">
+		          	Grassroots Land Management
+		          </a>
+		        </div>
+	    	</li>
+	    	<li class="nav-item"> 
+	    		<a class="nav-link" href="volunteer">Volunteer</a>
+	    	</li>
+	    	<li class="nav-item">
+	    		<a class="nav-link" href="https://secure.actblue.com/donate/fenwickformayor">Donate</a>
+	    	</li>
+	    </ul>
+	</div>
+</nav>

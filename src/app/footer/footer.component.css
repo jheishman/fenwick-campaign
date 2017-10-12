@@ -1,0 +1,11 @@
+.container-fluid {
+	background-color: #333;
+	margin-top: 20px;
+	bottom: 0px;
+}
+
+h6 { 
+	color:white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
